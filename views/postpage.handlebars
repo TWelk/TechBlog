@@ -1,0 +1,55 @@
+<section id="postpage">
+  <article id="post">
+    <article class="post-header">
+      <p class="title">{{title}}</p>
+      <p class="posted-by">posted by {{user.name}} at {{time_created}}</p>
+    </article>
+    <article class="post-body">
+      <pre style="max-height: fit-content; white-space: pre-wrap;">{{post}}</pre>
+    </article>
+    {{#if admin}}
+    {{#if owner}}
+    {{else}}
+    <article id="adminButtons">
+      <button id="adminDeleteButton">Delete</button>
+      <p class="hidden" id="adminDeleteConfirmation">Delete Post?</p>
+      <button id="adminConfirmButton" class="hidden" data-postId={{id}}>Confirm</button>
+      <button id="adminCancelButton" class="hidden">Cancel</button>
+    </article>
+    {{/if}}
+    {{/if}}
+
+    {{#if owner}}
+    <article id="userButtons">
+      <button id="updateButton">Update</button>
+      <button id="deleteButton">Delete</button>
+      <button id="saveButton" class="hidden" data-postId={{id}}>Save</button>
+      <p class="hidden" id="deleteConfirmation">Delete Post?</p>
+      <button id="confirmButton" class="hidden" data-postId={{id}}>Confirm</button>
+      <button id="cancelButton" class="hidden">Cancel</button>
+    </article>
+    <script src="/js/editPost.js"></script>
+    {{/if}}
+  </article>
+
+  <article id="newComment">
+    <h5 id="newCommentHeader">New Comment</h5>
+    <textarea name="comment" id="comment" cols="30" rows="3" maxlength="255" placeholder="New Comment"></textarea>
+    <span id="newCommentUserButtons">
+      <button type="submit" id="comment_submit" data-postId={{id}} disabled>Submit</button>
+    </span>
+  </article>
+
+  <article id="comments">
+    {{#each comments as |comment|}}
+    {{> comment-card}}
+    {{/each}}
+  </article>
+</section>
+{{#if admin}}
+<script src="/js/admin.js"></script>
+<script src="/js/adminToggle.js"></script>
+{{/if}}
+
+<script src="/js/editComment.js"></script>
+<script src="/js/newComment.js"></script>

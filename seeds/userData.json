@@ -1,0 +1,13 @@
+[{
+        "name": "Admin",
+        "email": "admin@techblog.com",
+        "password": "Password12345!",
+        "role_id": 1
+    },
+    {
+        "name": "NewUser",
+        "email": "newuserwebsite.com",
+        "password": "Thisisthenewpass2",
+        "role_id": 2
+    }
+]

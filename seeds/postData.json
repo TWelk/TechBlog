@@ -1,0 +1,16 @@
+[
+    {
+      "id": 2,
+      "title": "Version 1.0",
+      "user_id": 1,
+      "time_created": "2021-10-18T01:59:40.000Z",
+      "post": "This is officialy v1.0\n\nWhenever the site is updated. A patch notes-style post will be made. \n\nPlanned future updates:\n1. More appealing color scheme\n2. New post UI style update\n3. New comment UI style update\n4. Comment style update\n5. Post style update"
+    },
+    {
+      "id": 4,
+      "title": "Style Update 1",
+      "user_id": 1,
+      "time_created": "2021-10-24T23:01:15.000Z",
+      "post": "I've just pushed style update 1 live. Here are the updates:\n\n+ Update comment button works now.\n+ Added compression to all files sent.\n+ Rearranged the nav to be more visually appealing.\n+ Set a global font variable that is generally easy to read.\n+ Set light mode font color to #435787.\n+ Fixed post title position issues and gave them the global font and color.\n+ fixed posted by info position issues and gave them the global font italicized and global color.\n+ Lazy Afternoon Blog jumbotron takes you to the homepage when clicked.\n+ Updated new post UI to be clean and easy to look at and added background color for possible theme.\n+ Updated new comment UI to match new post UI.\n+ Updated Comments design and made it easier to read the text.\n+ Post design is sleeker and easily readable.\n\nI'm very proud of this update. Mostly because I have not been doing so well with my styling lately. I am progressing for sure but style is still my most tedious work. The next updates will mostly be administrative tools. But, I will be adding at least 1 general user feature per feature update. Along with many bug fixes and whatnot.\n"
+    }
+  ]

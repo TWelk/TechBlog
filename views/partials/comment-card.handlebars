@@ -1,0 +1,38 @@
+<section class="comment-container">
+  <article class="comment-header">
+    <p class="commented-by">{{user.name}} at {{time_created}}</p>
+  </article>
+  <article class="comment-body">
+    <p class="comment-text">{{comment}}</p>
+  </article>
+  {{#if admin}}
+    {{#if owner}}{{else}}
+      <span class="adminCommentUserButtons">
+        <button class="adminCommentDeleteButton">Delete</button>
+        <p class="hidden adminDeleteCommentConfirmation">Delete Comment?</p>
+        <button
+          class="adminConfirmCommentDeleteButton hidden"
+          data-comment_id={{id}}
+        >Confirm</button>
+        <button class="adminCancelUpdateButton hidden">Cancel</button>
+      </span>
+    {{/if}}
+  {{/if}}
+
+  {{#if owner}}
+    <span id="commentUserButtons">
+      <button class="commentUpdateButton">Update</button>
+      <button class="commentDeleteButton">Delete</button>
+      <button
+        class="confirmCommentButton hidden"
+        data-comment_id={{id}}
+      >Confirm</button>
+      <button class="cancelUpdateButton hidden">Cancel</button>
+      <button
+        class="saveCommentButton hidden"
+        data-comment_id={{id}}
+        disabled
+      >Save</button>
+    </span>
+  {{/if}}
+</section>
