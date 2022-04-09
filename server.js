@@ -4,7 +4,7 @@ const session = require("express-session");
 const exphbs = require("express-handlebars");
 const compression = require('compression');
 const routes = require("./controllers");
-const helpers = require("./utils/helpers");
+// const helpers = require("./utils/helpers");
 //Sequelize
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
@@ -14,7 +14,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Set up Handlebars.js engine with custom helpers for later
-const hbs = exphbs.create({ helpers });
+const hbs = exphbs.create({});
 
 const sess = {
     secret: "Super secret secret",
@@ -22,11 +22,11 @@ const sess = {
         //Setting max age of session to 20 minutes
         maxAge: 1200000,
         //When the protocol being used to connect to the server is HTTP, store session
-        httpOnly: true,
+        // httpOnly: true,
         //When the protocol being used is HTTPS, dont use cookie
-        secure: false,
+        // secure: false,
         //use cookie only on our site
-        sameSite: "strict",
+        // sameSite: "strict",
     },
     resave: false,
     saveUninitialized: true,
