@@ -22,11 +22,11 @@ const sess = {
         //Setting max age of session to 20 minutes
         maxAge: 1200000,
         //When the protocol being used to connect to the server is HTTP, store session
-        httpOnly: true,
+        // httpOnly: true,
         //When the protocol being used is HTTPS, dont use cookie
-        secure: false,
+        // secure: false,
         //use cookie only on our site
-        sameSite: "strict",
+        // sameSite: "strict",
     },
     resave: false,
     saveUninitialized: true,
