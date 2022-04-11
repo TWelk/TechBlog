@@ -6,7 +6,7 @@
     },
     {
         "name": "NewUser",
-        "email": "newuserwebsite.com",
+        "email": "newuser@website.com",
         "password": "Thisisthenewpass2",
         "role_id": 2
     }

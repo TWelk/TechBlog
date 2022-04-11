@@ -10,15 +10,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/TWelk/TechBlog.git"
+        "url": "git+https://github.com/twelk/TechBlog.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/TWelk/TechBlog/issues"
+        "url": "https://github.com/twelk/TechBlog/issues"
     },
-    "homepage": "https://github.com/TWelk/TechBlog#readme",
+    "homepage": "https://github.com/twelk/TechBlog#readme",
     "dependencies": {
         "axios": "^0.21.4",
         "bcrypt": "^5.0.1",
@@ -29,8 +29,8 @@
         "express-handlebars": "^5.3.4",
         "express-session": "^1.17.2",
         "hbs": "^4.1.2",
-        "mysql2": "^2.3.3",
-        "sequelize": "^6.17.0"
+        "mysql2": "^2.3.0",
+        "sequelize": "^6.6.5"
     },
     "devDependencies": {
         "nodemon": "^2.0.13"
