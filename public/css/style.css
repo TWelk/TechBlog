@@ -313,7 +313,7 @@ body {
 
 #newPost>* {
     font-family: var(--globalFont);
-    color: var(--lightColor5);
+    color: var(--color2);
 }
 
 #newPostTitle {
