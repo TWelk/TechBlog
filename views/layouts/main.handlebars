@@ -16,6 +16,7 @@
   <header id="main-header">
     <span id="nav">
       <a href="/" id="jumbotron">Tech Blog</a>
+      <div id="toggle"><i class="indicator"></i></div>
       <span id="navOptions">
         {{#if admin}}
         <a id="adminTools" data-status="off">Admin Tools: Off</a>
@@ -34,6 +35,7 @@
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
+  <script src="/js/toggle.js"></script>
 </body>
 
 </html>
