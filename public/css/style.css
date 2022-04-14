@@ -3,7 +3,7 @@
     --deniedColor: #e37688;
     --lightColor1: #F36A6D;
     --lightColor2: #EF476F;
-    --lightColor3: #0CB0A9;
+    --lightColor3: #468FAF;
     --lightColor4: #cdcbcb;
     --lightColor5: #FFD166;
     --color1: #118AB2;
@@ -16,7 +16,7 @@
     --summer3: #ffffff;
     --summer4: #d9e1ff;
     --summer5: #afc5ff;
-    --background-color: #118AB2;
+    --background-color: #000814;
     /*Bordering*/
     --uiBorderRadius: 4px;
     --uiBorder: 1px solid var(--lightColor4);
@@ -33,7 +33,7 @@ body {
 }
 
 body.active {
-    background-color: var(--color2);
+    background-color: var(--background-color);
 }
 
 #toggle {
