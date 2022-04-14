@@ -1,6 +1,6 @@
 const body = document.querySelector('body');
 const postpage = document.getElementById('postpage');
-const home = document.querySelector('.home')
+const home = document.getElementById('home')
 const toggle = document.getElementById('toggle');
 
 toggle.onclick = function() {
