@@ -32,7 +32,8 @@ body {
     background-color: var(--lightColor3);
 }
 
-body.active {
+body.active,
+#postpage.active {
     background-color: var(--background-color);
 }
 
