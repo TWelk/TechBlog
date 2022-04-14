@@ -33,7 +33,8 @@ body {
 }
 
 body.active,
-#postpage.active {
+#postpage.active,
+.home.active {
     background-color: var(--background-color);
 }
 
