@@ -34,7 +34,7 @@ body {
 
 body.active,
 #postpage.active,
-#home.active {
+.home.active {
     background-color: var(--background-color);
 }
 
@@ -517,6 +517,6 @@ body.active,
 
 /*Homepage style*/
 
-#home {
+.home {
     background-color: var(--lightColor3);
 }
